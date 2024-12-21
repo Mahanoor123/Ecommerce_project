@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <!------------ This is Cart Header -------->
+        <header class="header">
+            <nav>
+                <img src="Assets/Images/homepage_images/ABC_logo.png" alt="ABC-Store" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="details.html">Features</a></li>
+                    <li><a href="index.html">Explore</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav_links">
+                    <a href="account.html"><i class="bi bi-person"></i></a>
+                    <a href="cart.html"><i class="bi bi-bag"></i></a>
+                    <i class="bi bi-search"></i>
+                </div>
+            </nav>
+            <div class="shipping_process">
+                <div class="process">
+                    Your Order
+                </div>
+                <div class="process">
+                    checkout
+                </div>
+                <div class="process">
+                    shipping
+                </div>
+                <div class="process">
+                    Delivered
+                </div>
+            </div>
+        </header>
+
+        <!---------- This is Cart Details  --------->
+        <section class="cart_header">
+            <h1>Your Shopping</h1>
+            <h4>(3 Items)</h4>
+
+            <div class="cart_table">
+                <table>
+                    <thead>
+                        <th>Product</th>
+                        <th>Details</th>
+                        <th>Quantity</th>
+                        <th>remove</th>
+                        <th>Price</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="Assets/Images/details_page_images/related1.png" width="80rem"> </td>
+                            <td>
+                                <h4>Black Sports Watch</h4>
+                                <p>Item no:987367</p>
+                                <p>Ctegory: Mans wear</p>
+                                <p class="clrs">Color: <button style="background-color: rgb(53, 53, 53);"></button></p>
+                                <p class="size">Size: <button>Large</button></p>
+                            </td>
+                            <td class="qty"><i class="bi bi-dash"></i> <button>1</button> <i class="bi bi-plus"></i>
+                            </td>
+                            <td class="cancel"> <i class="bi bi-x"></i> </td>
+                            <td>&dollar; 657.0</td>
+                        </tr>
+                        <tr>
+                            <td><img src="Assets/Images/productpage_images/product6.png" width="80rem"> </td>
+                            <td>
+                                <h4>Black Casual Trouser</h4>
+                                <p>Item no:956767</p>
+                                <p>Ctegory: Mans wear</p>
+                                <p class="clrs">Color: <button style="background-color: rgb(34, 34, 34);"></button></p>
+                                <p class="size">Size: <button>Medium</button></p>
+                            </td>
+                            <td class="qty"><i class="bi bi-dash"></i> <button>2</button> <i class="bi bi-plus"></i>
+                            </td>
+                            <td class="cancel"> <i class="bi bi-x"></i> </td>
+                            <td>&dollar; 456.0</td>
+                        </tr>
+                        <tr>
+                            <td><img src="Assets/Images/productpage_images/product4.png" width="80rem"> </td>
+                            <td>
+                                <h4>Black Comfy Stocks</h4>
+                                <p>Item no:6873787</p>
+                                <p>Ctegory: Mans wear</p>
+                                <p class="clrs">Color: <button style="background-color: rgb(197, 197, 197);"></button>
+                                </p>
+                                <p class="size">Size: <button>Large</button></p>
+                            </td>
+                            <td class="qty"><i class="bi bi-dash"></i> <button>5</button> <i class="bi bi-plus"></i>
+                            </td>
+                            <td class="cancel"> <i class="bi bi-x"></i> </td>
+                            <td>&dollar; 457.0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="order_checkout_container">
+                <div class="checkout1">
+                    <h2>Estimate Shipping</h2>
+                    <div class="ship_options">
+                        <div class="add"> <input type="radio"> <i class="bi bi-truck"></i> Ship to an address </div>
+                        <div class="shop"> <input type="radio"> <i class="bi bi-shop"></i> Pick up in Store </div>
+                    </div>
+                    <div class="ship_details">
+                        <div class="ship">
+                            <i class="bi bi-geo-alt"></i>
+                            <input type="text">
+                        </div>
+                        <div class="ship">
+                            <i class="bi bi-mailbox"></i>
+                            <input type="text">
+                        </div>
+                        <div class="ship">
+                            <i class="bi bi-clock"></i>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <button class="save">Save</button>
+                </div>
+                <div class="checkout2">
+                    <h2>Payment Methods</h2>
+                    <p>How would you like to pay</p>
+                    <button class="pay"><i class="bi bi-credit-card"></i> Credit Card</button>
+                    <button class="pay"><i class="bi bi-wallet2"></i> Wallet </button>
+                    <button class="pay"><i class="bi bi-paypal"></i> Paypal </button>
+                    <button class="pay"><i class="bi bi-cash"></i> Cash on Delivery </button>
+                    <h3>Card Details</h3>
+                    <p class="cd">Name on card</p>
+                    <input type="text">
+                    <p class="cd">Card Number</p>
+                    <input type="text">
+                    <p class="cd">Expiry date</p>
+                    <input type="text">
+                    <br>
+                    <button class="save">Save Info</button>
+
+                    <p class="voucher">Do you have any promo/gift voucher/discount code</p>
+                    <div class="vouch_no">
+                    <input type="nummber" placeholder="Enter code here" class="vouch_no"> <button class="apply">Applied</button>
+                    </div>
+                </div>
+
+                <div class="checkout3">
+                    <h2>Order Summary</h2>
+                    <table>
+                        <tr>
+                            <td>Sub Total</td>
+                            <td>&dollar; 340.00</td>
+                        </tr>
+                        <tr>
+                            <td>GST</td>
+                            <td>&dollar; 40.00</td>
+                        </tr>
+                        <tr>
+                            <td>Delivery Charge</td>
+                            <td>&dollar; 120.00</td>
+                        </tr>
+                        <tr>
+                            <td>Discount</td>
+                            <td>&dollar; -45.00</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 1rem; font-weight: 600;" >Total</td>
+                            <td style="font-size: 1rem; font-weight: 600;">&dollar; 600.00</td>
+                        </tr>
+
+                    </table>
+
+                    <div class="checkout">
+                        <button>CHECKOUT</button>
+                    </div>
+
+                    <p class="emergency">
+                        Call for further info: +9756826460
+                    </p>
+
+                    <div class="more_info">
+                        <a href="#">Track Your order</a>
+                        <a href="#"><i class="bi bi-arrow"></i> Back</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!------------- This is Footer Section ---------->
+        <section class="footer">
+            <div class="main_footer">
+                <div class="install_links">
+                    <p>Download Our Application</p>
+                    <p>Download our app for Android and ios phone</p>
+                    <div class="install_icons">
+                        <img src="Assets/Images/homepage_images/app-store 1.png" alt="">
+                        <img src="Assets/Images/homepage_images/play-store 1.png" alt="">
+                    </div>
+                </div>
+                <div class="useful_links">
+                    <h2>Useful Links</h2>
+                    <ul>
+                        <li><a href="#">Coupons</a></li>
+                        <li><a href="#">Blogpost</a></li>
+                        <li><a href="#">Return policy</a></li>
+                        <li><a href="#">Join Newsletter</a></li>
+                        <li><a href="#">Customer care</a></li>
+                    </ul>
+                </div>
+                <div class="social_links">
+                    <h2 class="social_head">Join Our Social</h2>
+                    <div class="social_logo">
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-twitter"></i>
+                        <i class="bi bi-pinterest"></i>
+                    </div>
+                    <img src="Assets/Images/homepage_images/ABC_logo.png" alt="" class="footer_logo">
+                </div>
+            </div>
+            <div class="footer_copy">All rights are reserved - 2024</div>
+        </section>
+
+        <script src="./Assets/JS/index.js"></script>
+</body>
+
+</html>

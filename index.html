@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css">
+    <title>Homepage</title>
+</head>
+<body>
+
+    <!--------- This is the Header --------->
+
+    <header class="header">
+        <nav>
+            <img src="Assets/Images/homepage_images/ABC_logo.png" alt="ABC-Store" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="details.html">Features</a></li>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav_links">
+                <a href="account.html"><i class="bi bi-person"></i></a>
+                <a href="cart.html"><i class="bi bi-bag"></i><span id="cart"></span></a>
+                <i class="bi bi-search"></i>
+            </div>
+            <i class="bi bi-list" id="menu"></i>
+        </nav>
+        <!-- This is Hero Section -->
+        <div class="hero_section_container">
+            <div class="hero_section_content">
+                <small>ATHELETE'S COLLECTION</small>
+                <h1>Choose Your Style</h1>
+                <h2>Find Your Way</h2>
+                <p>We provide the best and comfy outfits, athelete's suit, jumper and accessories to you. Lets stand
+                    alone in style as it is a way of grace.</p>
+                <button class="explore">Explore <i class="bi bi-arrow-up-right-circle-fill"></i></button>
+                <div class="rating">245 <i class="bi bi-heart-fill"></i> Share <i class="bi bi-share-fill"></i>
+                </div>
+            </div>
+            <div class="hero_section_image">
+                <img src="Assets/Images/homepage_images/hero_img3.png">
+            </div>
+            <div class="hero_section_form">
+                <form>
+                    <div class="color_input">
+                        <p>Choose colour:
+                            <button style="background-color: aquamarine;"></button>
+                            <button style="background-color: brown;"></button>
+                            <button style="background-color: coral;"></button>
+                            <button style="background-color: rgb(12, 144, 177);"></button>
+                            <button style="background-color: rgb(177, 20, 130);"></button>
+                        </p>
+                    </div>
+
+                    <div class="selection_input">
+                        <p>Model no:</p>
+                        <input type="text" placeholder="F12/66/77" readonly>
+                        <p>Select your category:</p>
+                        <select name="category" id="category">
+                            <option value="man wear">Mans wear</option>
+                            <option value="women wear">Womans wear</option>
+                            <option value="accessories">Accessories</option>
+                            <option value="fashion">Fashion</option>
+                        </select>
+                        <p>Select your height:</p>
+                        <select name="height" id="height">
+                            <option value="5'7">5'7</option>
+                            <option value="5'5">5'5</option>
+                            <option value="5">5'</option>
+                            <option value="4'6">4'6</option>
+                        </select>
+                        <p>Select your Size:</p>
+                        <input type="text" placeholder="Medium">
+                        <br>
+                        <button>S</button>
+                        <button>M</button>
+                        <button>L</button>
+                        <button>XL</button>
+                        <button>XXL</button>
+                    </div>
+
+                    <div class="shop">
+                        <button class="Shop">Shop</button> <a href="#" class="back"> <i
+                                class="bi bi-arrow-left"></i>Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- This is tags Section -->
+
+        <div class="tags">
+            <div class="tag">250+ Customers</div>
+            <div class="tag">5 Stars Rating</div>
+            <div class="tag">890+ Likes</div>
+            <div class="tag">Unlimited Orders</div>
+        </div>
+    </header>
+
+    <!--------- This is the gallery section --------->
+    
+    <section class="gallery_section_container">
+        <div class="gallery_image1">
+            <div class="gallery_content">
+                <p>Latest Design Comfy Joggars.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="gallery_image2">
+            <div class="gallery_content">
+                <p>Latest Design Comfy Sneakers.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        <div class="gallery_image3">
+            <div class="gallery_content">
+                <p>Latest Design Comfy Hood.</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!--------- This is the cards section --------->
+
+    <section class="cards_section_container">
+        <h1>Featured Products</h1>
+        <div class="cards_row" id="cards_Row">
+        </div>
+    </section>
+
+    <!--------- This is the arrival section --------->
+
+    <section class="new_arrival_section">
+        <img src="Assets/Images/homepage_images/exclusive 1.png" class="new_arrival_image">
+        <div class="new_arrival_content">
+            <h1>New Arrival - Exclusive Offer</h1>
+            <h2>Smart Brand Watch</h2>
+            <button class="explore">Store Now</button>
+        </div>
+    </section>
+
+    <!--------- This is the footer --------->
+
+    <section class="footer">
+        <div class="main_footer">
+            <div class="install_links">
+                <p>Download Our Application</p>
+                <p>Download our app for Android and ios phone</p>
+                <div class="install_icons">
+                    <img src="Assets/Images/homepage_images/app-store 1.png" alt="">
+                    <img src="Assets/Images/homepage_images/play-store 1.png" alt="">
+                </div>
+            </div>
+            <div class="useful_links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blogpost</a></li>
+                    <li><a href="#">Return policy</a></li>
+                    <li><a href="#">Join Newsletter</a></li>
+                    <li><a href="#">Customer care</a></li>
+                </ul>
+            </div>
+            <div class="social_links">
+                <h2 class="social_head">Join Our Social</h2>
+                <div class="social_logo">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-pinterest"></i>
+                </div>
+                <img src="Assets/Images/homepage_images/ABC_logo.png" alt="" class="footer_logo">
+            </div>
+        </div>
+        <div class="footer_copy">All rights are reserved - 2024</div>
+    </section>
+    
+
+    <script src="./Assets/JS/index.js"></script>
+</body>
+</html>

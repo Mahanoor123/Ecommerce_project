@@ -1,0 +1,194 @@
+@import url("media.css");
+
+
+@media (max-width: 800px) { 
+    .header{
+        min-width: 100vw;
+        padding: 0rem;
+    }
+    nav #menu{
+        display: flex;
+    }  
+    nav ul li{
+        display: none;
+    }
+    nav .nav_links {
+        display: none;
+    }
+    nav ul.active{
+        display: flex;
+        flex-direction: column;
+    }
+    .hero_section_container {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero_section_content {
+        padding: 1rem;
+        min-width: 100vw;
+    }
+    .hero_section_image {
+        min-width: 60vw;
+        margin: 2rem 0;
+    }
+    .hero_section_form {
+        min-height: 55vh;
+    }
+    .header .tags{
+        display: none !important;
+    }
+    .gallery_section_container {
+        max-width: 100vw;
+        padding: 1rem;
+    }
+    .footer {
+        min-height: 100vh;
+        min-width: 100vw;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .install_icons img {
+        margin: 1rem 0;
+        width: 5rem;
+    }
+    .useful_links ul {
+        margin: 1rem 0;
+    }
+    .social_links .footer_logo {
+        margin: 1rem 0;
+        width: 8rem;
+    }
+    .login_form{
+        min-width: 60vw;
+        margin: 10px auto;
+    }
+}
+
+
+
+@media (max-width: 600px){
+    .product_header_container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .products_container .product_header h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    .footer {
+        min-height: 100vh;
+        min-width: 100vw;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .install_icons img {
+        margin: 1rem 0;
+        width: 5rem;
+    }
+    .useful_links ul {
+        margin: 1rem 0;
+    }
+    .social_links .footer_logo {
+        margin: 1rem 0;
+        width: 8rem;
+    }
+    .product_detail_content{
+        max-width: 100vw;
+        align-self: center;
+    }
+    .product_detail_content p {
+        min-width: 100%;
+    }
+    .related_product_section .related_product_container {
+        min-width: 90vw;
+        align-content: center;
+    }
+    .login_form{
+        min-width: 60vw;
+        margin: 10px auto;
+    }
+    
+}
+
+
+
+@media (max-width: 450px){
+    .hero_section_image {
+        max-width: 80vw;
+        margin: 2rem 0;
+    }
+    .products_container .product_header{
+        display: flex;
+        flex-direction: column;
+    }
+    .products_container .product_header h1 {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 1rem;
+    }
+    .gallery_section_container {
+        margin: 50px auto;
+        min-height: 200vh;
+        gap: 0px;
+        padding: 0px;
+    }
+    .cards_section_container h1 {
+        font-size: 1.5rem;
+        padding: 2rem 0 0 0;
+    }
+    .new_arrival_section {
+        display: flex;
+        flex-direction: column-reverse;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+    .footer {
+        min-height: 100vh;
+        min-width: 100vw;
+        padding: 1rem 1rem 0 1rem;
+    }
+    .install_icons img {
+        margin: 1rem 0;
+        width: 5rem;
+    }
+    .useful_links ul {
+        margin: 1rem 0;
+    }
+    .social_links .footer_logo {
+        margin: 1rem 0;
+        width: 8rem;
+    }
+    .main_detail_section {
+        min-height: 100vh;
+        min-width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px , 1fr));
+        gap: 0;
+    }
+    .product_detail_image{
+        min-width: 100vw;
+        height: 60vh;
+    }
+    .product_detail_image .sub_images img {
+       width: 30vw;
+    }
+    .product_detail_image .main_image {
+       width: 70vw;
+    }
+    .product_detail_content{
+        align-self: center;
+    }
+    .product_detail_content p {
+        min-width: 95vw;
+    }
+    .shipping_process {
+        box-shadow: 2px 2px 6px 1px rgb(124, 124, 124);
+        min-height: 100vh;
+        margin: 2rem auto;
+        flex-direction: column;
+    }
+    .login_form{
+        min-width: 90vw;
+        margin: 0px auto;
+        padding: 0.5rem 1rem;
+    }
+}

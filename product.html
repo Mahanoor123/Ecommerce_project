@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Notable&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <title>Products</title>
+</head>
+
+<body>
+    <!--------- This is the Header --------->
+    <header class="header">
+        <nav>
+            <img src="Assets/Images/homepage_images/ABC_logo.png" alt="ABC-Store" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="details.html">Features</a></li>
+                <li><a href="index.html">Explore</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav_links">
+                <a href="account.html"><i class="bi bi-person"></i></a>
+                <a href="cart.html"><i class="bi bi-bag"></i></a>
+                <i class="bi bi-search"></i>
+            </div>
+            <i class="bi bi-list" id="menu"></i>
+        </nav>
+        <div class="product_header_container">
+            <div class="product_header_content">
+                <small>FLAGSHIP STORE</small>
+                <h1>We Bring The Latest Collection</h1>
+                <h2>Latest Collection - Limited Stock</h2>
+                <button class="explore_more">Explore More</button>
+            </div>
+            <div class="product_header_image"></div>
+        </div>
+    </header>
+
+    <!-------- This is All Products Section ------->
+
+    <section class="products_container">
+        <div class="product_header">
+            <h1>All Products</h1>
+            <select name="sorting" id="sorting">
+                <option value="default">Default sorting</option>
+                <option value="by price">By size</option>
+                <option value="by categogory">By category</option>
+                <option value="by color">By color</option>
+                <option value="by price">By price</option>
+                <option value="by latest">By latest</option>
+            </select>
+        </div>
+
+        <div class="products_display" id="products_section">
+        </div>
+
+
+        <div class="see_more_products">
+            <button class="prev">Previous</button>
+            <button class="page">2</button>
+            <button class="next">Next</button>
+
+        </div>
+
+    </section>
+
+    <!------- This is Footer Section --------->
+
+    <section class="footer">
+        <div class="main_footer">
+            <div class="install_links">
+                <p>Download Our Application</p>
+                <p>Download our app for Android and ios phone</p>
+                <div class="install_icons">
+                    <img src="Assets/Images/homepage_images/app-store 1.png" alt="">
+                    <img src="Assets/Images/homepage_images/play-store 1.png" alt="">
+                </div>
+            </div>
+            <div class="useful_links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="#">Coupons</a></li>
+                    <li><a href="#">Blogpost</a></li>
+                    <li><a href="#">Return policy</a></li>
+                    <li><a href="#">Join Newsletter</a></li>
+                    <li><a href="#">Customer care</a></li>
+                </ul>
+            </div>
+            <div class="social_links">
+                <h2 class="social_head">Join Our Social</h2>
+                <div class="social_logo">
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-pinterest"></i>
+                </div>
+                <img src="Assets/Images/homepage_images/ABC_logo.png" alt="" class="footer_logo">
+            </div>
+        </div>
+        <div class="footer_copy">All rights are reserved - 2024</div>
+    </section>
+
+
+    <script src="./Assets/JS/index.js"></script>
+</body>
+
+</html>
